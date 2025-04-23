@@ -6,11 +6,11 @@ import time
 # ============================================
 # ページ設定
 # ============================================
-# st.set_page_config(
-#     page_title="Streamlit デモ",
-#     layout="wide",
-#     initial_sidebar_state="expanded"
-# )
+st.set_page_config(
+     page_title="Streamlit デモ",
+     layout="wide",
+     initial_sidebar_state="expanded"
+ )
 
 # ============================================
 # タイトルと説明
@@ -36,9 +36,9 @@ name = st.text_input("あなたの名前", "ゲスト")
 st.write(f"こんにちは、{name}さん！")
 
 # ボタン
-# st.subheader("ボタン")
-# if st.button("クリックしてください"):
-#     st.success("ボタンがクリックされました！")
+st.subheader("ボタン")
+if st.button("クリックしてください"):
+    st.success("ボタンがクリックされました！")
 
 # チェックボックス
 # st.subheader("チェックボックス")
